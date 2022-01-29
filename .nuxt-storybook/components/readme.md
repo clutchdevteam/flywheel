@@ -13,3 +13,4 @@ You can directly use them in pages and other components without the need to impo
 - `<Page>` | `<page>` (components/Page.vue)
 - `<Teaser>` | `<teaser>` (components/Teaser.vue)
 - `<BaseButton>` | `<base-button>` (components/base/BaseButton.vue)
+- `<BaseInput>` | `<base-input>` (components/base/BaseInput.vue)

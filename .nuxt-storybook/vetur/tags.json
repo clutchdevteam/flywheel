@@ -19,5 +19,8 @@
   },
   "BaseButton": {
     "description": "Auto imported from components/base/BaseButton.vue"
+  },
+  "BaseInput": {
+    "description": "Auto imported from components/base/BaseInput.vue"
   }
 }
