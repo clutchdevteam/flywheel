@@ -1,0 +1,23 @@
+{
+  "Feature": {
+    "description": "Auto imported from components/Feature.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Grid": {
+    "description": "Auto imported from components/Grid.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "Page": {
+    "description": "Auto imported from components/Page.vue"
+  },
+  "Teaser": {
+    "description": "Auto imported from components/Teaser.vue"
+  },
+  "BaseButton": {
+    "description": "Auto imported from components/base/BaseButton.vue"
+  }
+}

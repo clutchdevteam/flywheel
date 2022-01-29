@@ -5,6 +5,11 @@ export default {
     STORYBLOK_API_KEY: process.env.STORYBLOK_API_KEY,
   },
 
+  storybook: {
+    port: 4000,
+    stories: ["~/components/**/*.stories.js"],
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "clutch-site",

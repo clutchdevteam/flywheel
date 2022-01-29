@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "storybook": "nuxt storybook"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
@@ -15,6 +16,7 @@
     "storyblok-nuxt": "^2.0.1"
   },
   "devDependencies": {
+    "@nuxtjs/storybook": "^4.2.0",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "postcss": "^8.3.5"
   }
