@@ -1,7 +1,8 @@
 export { default as Page } from '../../components/Page.vue'
-export { default as BlocksTest } from '../../components/blocks/Test.vue'
 export { default as BaseButton } from '../../components/base/BaseButton.vue'
+export { default as BaseImage } from '../../components/base/BaseImage.vue'
 export { default as BaseInput } from '../../components/base/BaseInput.vue'
+export { default as BlocksTest } from '../../components/blocks/Test.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

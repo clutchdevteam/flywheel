@@ -2,13 +2,16 @@
   "Page": {
     "description": "Auto imported from components/Page.vue"
   },
-  "BlocksTest": {
-    "description": "Auto imported from components/blocks/Test.vue"
-  },
   "BaseButton": {
     "description": "Auto imported from components/base/BaseButton.vue"
   },
+  "BaseImage": {
+    "description": "Auto imported from components/base/BaseImage.vue"
+  },
   "BaseInput": {
     "description": "Auto imported from components/base/BaseInput.vue"
+  },
+  "BlocksTest": {
+    "description": "Auto imported from components/blocks/Test.vue"
   }
 }
