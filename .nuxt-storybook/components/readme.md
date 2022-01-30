@@ -6,11 +6,7 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
-- `<Feature>` | `<feature>` (components/Feature.vue)
-- `<Footer>` | `<footer>` (components/Footer.vue)
-- `<Grid>` | `<grid>` (components/Grid.vue)
-- `<Header>` | `<header>` (components/Header.vue)
 - `<Page>` | `<page>` (components/Page.vue)
-- `<Teaser>` | `<teaser>` (components/Teaser.vue)
+- `<BlocksTest>` | `<blocks-test>` (components/blocks/Test.vue)
 - `<BaseButton>` | `<base-button>` (components/base/BaseButton.vue)
 - `<BaseInput>` | `<base-input>` (components/base/BaseInput.vue)

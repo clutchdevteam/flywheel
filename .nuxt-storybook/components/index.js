@@ -1,9 +1,5 @@
-export { default as Feature } from '../../components/Feature.vue'
-export { default as Footer } from '../../components/Footer.vue'
-export { default as Grid } from '../../components/Grid.vue'
-export { default as Header } from '../../components/Header.vue'
 export { default as Page } from '../../components/Page.vue'
-export { default as Teaser } from '../../components/Teaser.vue'
+export { default as BlocksTest } from '../../components/blocks/Test.vue'
 export { default as BaseButton } from '../../components/base/BaseButton.vue'
 export { default as BaseInput } from '../../components/base/BaseInput.vue'
 

@@ -1,16 +1,18 @@
 <template>
-  <div v-editable="blok" class="py-2">
-    <h1 class="text-lg">{{ blok.name }}</h1>
+  <div>
+    {{ block.text }}
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    blok: {
+    block: {
       type: Object,
       required: true,
     },
   },
 };
 </script>
+
+<style lang="scss" scoped></style>
