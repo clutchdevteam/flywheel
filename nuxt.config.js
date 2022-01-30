@@ -29,7 +29,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/components"],
+  plugins: ["~/plugins/components", "~/plugins/wicg-inert.client.js"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -50,6 +50,7 @@ export default {
         cacheProvider: "memory",
       },
     ],
+    "portal-vue/nuxt",
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

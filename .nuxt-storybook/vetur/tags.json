@@ -11,6 +11,9 @@
   "BaseInput": {
     "description": "Auto imported from components/base/BaseInput.vue"
   },
+  "BaseModal": {
+    "description": "Auto imported from components/base/BaseModal.vue"
+  },
   "BlocksTest": {
     "description": "Auto imported from components/blocks/Test.vue"
   }
