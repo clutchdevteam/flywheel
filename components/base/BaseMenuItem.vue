@@ -1,6 +1,7 @@
 <template>
   <div :id="`${menuId}-wrapper`" @keydown.stop="handleKeyPress">
     <button
+      class="px-4 py-1 bg-green-500 rounded text-white hover:bg-green-600"
       @click.prevent="toggleMenu(menu)"
       :id="menuId"
       aria-haspopup="true"

@@ -1,5 +1,5 @@
 <template>
-  <li>
+  <div>
     <template v-if="menu.submenus">
       <BaseMenuItem :menu="menu" :depth="depth + 1" />
     </template>
@@ -11,7 +11,7 @@
     >
       {{ menu.title }}
     </nuxt-link>
-  </li>
+  </div>
 </template>
 
 <script>

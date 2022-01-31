@@ -4,7 +4,7 @@ export default {
 
 export const Default = (args) => ({
   props: Object.keys(args),
-  template: '<nav><ul><BaseMenu v-bind="$props"/></nav></ul>',
+  template: '<BaseMenu v-bind="$props"/>',
 });
 
 Default.argTypes = {
