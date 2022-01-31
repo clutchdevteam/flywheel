@@ -4,8 +4,11 @@ export default {
 
 export const Default = (args) => ({
   props: Object.keys(args),
-  template:
-    '<div :class="width"><BaseImage :src="src" :alt-text="altText" /></div>',
+  template: `
+  <div :class="width">
+    <BaseImage :src="src" :alt-text="altText" />
+  </div>
+  `,
 });
 
 Default.argTypes = {

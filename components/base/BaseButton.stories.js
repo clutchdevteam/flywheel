@@ -19,7 +19,12 @@ export const Default = (args) => ({
       this.clicked++;
     },
   },
-  template: `<div><BaseButton :type="type" @click="handleClick">{{buttonText}}</BaseButton><p class="mt-12">Clicked: {{clicked}}</p></div>`,
+  template: `
+  <div>
+    <BaseButton :type="type" @click="handleClick">{{buttonText}}</BaseButton>
+    
+    <p class="mt-12">Clicked: {{clicked}}</p>
+  </div>`,
 });
 
 Default.argTypes = {
