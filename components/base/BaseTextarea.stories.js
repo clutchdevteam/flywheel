@@ -28,14 +28,14 @@ Default.argTypes = {
   default: {
     control: "text",
   },
+  placeholder: {
+    control: "text",
+  },
   rows: {
     control: {
       type: "number",
       range: { min: 1, max: 10, step: 1 },
     },
-  },
-  placeholder: {
-    control: "text",
   },
   required: {
     control: "boolean",
@@ -44,7 +44,7 @@ Default.argTypes = {
 
 Default.args = {
   default: "Message",
-  rows: 4,
   placeholder: "What's on your mind today?",
+  rows: 4,
   required: false,
 };
