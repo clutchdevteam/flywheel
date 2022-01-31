@@ -11,6 +11,9 @@
   "BaseInput": {
     "description": "Auto imported from components/base/BaseInput.vue"
   },
+  "BaseLink": {
+    "description": "Auto imported from components/base/BaseLink.vue"
+  },
   "BaseMenu": {
     "description": "Auto imported from components/base/BaseMenu.vue"
   },
