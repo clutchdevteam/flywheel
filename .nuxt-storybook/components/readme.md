@@ -14,4 +14,5 @@ You can directly use them in pages and other components without the need to impo
 - `<BaseMenu>` | `<base-menu>` (components/base/BaseMenu.vue)
 - `<BaseMenuItem>` | `<base-menu-item>` (components/base/BaseMenuItem.vue)
 - `<BaseModal>` | `<base-modal>` (components/base/BaseModal.vue)
+- `<BaseTextarea>` | `<base-textarea>` (components/base/BaseTextarea.vue)
 - `<BlocksTest>` | `<blocks-test>` (components/blocks/Test.vue)

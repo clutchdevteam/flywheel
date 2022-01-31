@@ -23,6 +23,9 @@
   "BaseModal": {
     "description": "Auto imported from components/base/BaseModal.vue"
   },
+  "BaseTextarea": {
+    "description": "Auto imported from components/base/BaseTextarea.vue"
+  },
   "BlocksTest": {
     "description": "Auto imported from components/blocks/Test.vue"
   }

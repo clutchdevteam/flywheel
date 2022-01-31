@@ -6,6 +6,7 @@ export { default as BaseLink } from '../../components/base/BaseLink.vue'
 export { default as BaseMenu } from '../../components/base/BaseMenu.vue'
 export { default as BaseMenuItem } from '../../components/base/BaseMenuItem.vue'
 export { default as BaseModal } from '../../components/base/BaseModal.vue'
+export { default as BaseTextarea } from '../../components/base/BaseTextarea.vue'
 export { default as BlocksTest } from '../../components/blocks/Test.vue'
 
 // nuxt/nuxt.js#8607
