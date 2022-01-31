@@ -10,5 +10,7 @@ You can directly use them in pages and other components without the need to impo
 - `<BaseButton>` | `<base-button>` (components/base/BaseButton.vue)
 - `<BaseImage>` | `<base-image>` (components/base/BaseImage.vue)
 - `<BaseInput>` | `<base-input>` (components/base/BaseInput.vue)
+- `<BaseMenu>` | `<base-menu>` (components/base/BaseMenu.vue)
+- `<BaseMenuItem>` | `<base-menu-item>` (components/base/BaseMenuItem.vue)
 - `<BaseModal>` | `<base-modal>` (components/base/BaseModal.vue)
 - `<BlocksTest>` | `<blocks-test>` (components/blocks/Test.vue)

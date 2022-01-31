@@ -2,6 +2,8 @@ export { default as Page } from '../../components/Page.vue'
 export { default as BaseButton } from '../../components/base/BaseButton.vue'
 export { default as BaseImage } from '../../components/base/BaseImage.vue'
 export { default as BaseInput } from '../../components/base/BaseInput.vue'
+export { default as BaseMenu } from '../../components/base/BaseMenu.vue'
+export { default as BaseMenuItem } from '../../components/base/BaseMenuItem.vue'
 export { default as BaseModal } from '../../components/base/BaseModal.vue'
 export { default as BlocksTest } from '../../components/blocks/Test.vue'
 

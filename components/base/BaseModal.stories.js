@@ -9,5 +9,5 @@ export default {
 
 export const Default = (args) => ({
   template:
-    "<div><BaseModal><template v-slot:button>Open Modal</template><template v-slot:content><h2>The modal content</h2></template></BaseModal><portal-target name='modal'></portal-target></div",
+    "<div><BaseModal><template v-slot:button>Open Modal</template><template v-slot:content><h2>The modal content</h2></template></BaseModal><portal-target name='modal'></portal-target></div>",
 });
