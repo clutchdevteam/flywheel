@@ -1,10 +1,11 @@
 <template>
   <div class="flex flex-col">
-    <label class="text-sm mb-2">
+    <label class="text-sm mb-2" :for="_uid">
       <slot name="label" /> <span v-if="required">*</span>
     </label>
 
     <input
+      :id="_uid"
       class="border border-gray-300 rounded-md p-2"
       :type="type"
       :placeholder="placeholder"

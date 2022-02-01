@@ -1,10 +1,11 @@
 <template>
   <div class="flex flex-col">
-    <label :for="fieldId">
+    <label class="text-sm mb-2" :for="fieldId">
       <slot>Select an option</slot> <span v-if="isRequired">*</span>
     </label>
 
     <select
+      :id="fieldId"
       class="border border-gray-300 rounded-md p-2"
       v-bind="$attrs"
       v-on="listeners"
