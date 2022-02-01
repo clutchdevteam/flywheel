@@ -2,9 +2,6 @@
   "Page": {
     "description": "Auto imported from components/Page.vue"
   },
-  "BlocksTest": {
-    "description": "Auto imported from components/blocks/Test.vue"
-  },
   "BaseButton": {
     "description": "Auto imported from components/base/BaseButton.vue"
   },
@@ -31,5 +28,8 @@
   },
   "BaseTextarea": {
     "description": "Auto imported from components/base/BaseTextarea.vue"
+  },
+  "BlocksTest": {
+    "description": "Auto imported from components/blocks/Test.vue"
   }
 }
