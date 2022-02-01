@@ -11,7 +11,7 @@
       :disabled="disabled"
       @input="$emit('input', $event.target.value)"
     >
-      <option v-if="!isRequired" value="" selected disabled>Select</option>
+      <option value="" selected disabled>Select</option>
 
       <option v-for="option in options" :key="option.id" :value="option.title">
         {{ option.title }}
@@ -46,18 +46,6 @@ export default {
     listeners() {
       const { input, ...listeners } = this.$listeners;
       return listeners;
-    },
-  },
-
-  methods: {
-    /** Pass the option's id or label to the parent */
-    updateSelectedOption(event) {
-      // this.$emit(
-      //   "input",
-      //   this.options.find(
-      //     (option) => String(option.id) === String(event.target.value)
-      //   ).id
-      // );
     },
   },
 };
