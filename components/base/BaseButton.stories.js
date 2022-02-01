@@ -1,5 +1,5 @@
 export default {
-  title: "Base/Button",
+  title: "Base components/Button",
 };
 
 export const Default = (args) => ({

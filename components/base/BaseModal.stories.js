@@ -4,7 +4,7 @@ import PortalVue from "portal-vue";
 Vue.use(PortalVue);
 
 export default {
-  title: "Base/Modal",
+  title: "Base components/Modal",
 };
 
 export const Default = (args) => ({

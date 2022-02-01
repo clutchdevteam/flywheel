@@ -1,5 +1,5 @@
 export default {
-  title: "Base/Image",
+  title: "Base components/Image",
 };
 
 export const Default = (args) => ({

@@ -1,5 +1,5 @@
 export default {
-  title: "Base/Textarea",
+  title: "Base components/Textarea",
 };
 
 export const Default = (args) => ({

@@ -1,5 +1,5 @@
 export default {
-  title: "Base/Menu Dropdown",
+  title: "Base components/Menu Dropdown",
 };
 
 export const Default = (args) => ({

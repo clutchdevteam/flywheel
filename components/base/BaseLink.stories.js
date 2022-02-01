@@ -1,5 +1,5 @@
 export default {
-  title: "Base/Link",
+  title: "Base components/Link",
 };
 
 export const Default = (args) => ({
