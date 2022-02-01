@@ -2,9 +2,6 @@
   "Page": {
     "description": "Auto imported from components/Page.vue"
   },
-  "BlocksTest": {
-    "description": "Auto imported from components/blocks/Test.vue"
-  },
   "BaseButton": {
     "description": "Auto imported from components/base/BaseButton.vue"
   },
@@ -29,10 +26,19 @@
   "BaseModal": {
     "description": "Auto imported from components/base/BaseModal.vue"
   },
+  "BaseRadio": {
+    "description": "Auto imported from components/base/BaseRadio.vue"
+  },
+  "BaseRadioGroup": {
+    "description": "Auto imported from components/base/BaseRadioGroup.vue"
+  },
   "BaseSelect": {
     "description": "Auto imported from components/base/BaseSelect.vue"
   },
   "BaseTextarea": {
     "description": "Auto imported from components/base/BaseTextarea.vue"
+  },
+  "BlocksTest": {
+    "description": "Auto imported from components/blocks/Test.vue"
   }
 }
