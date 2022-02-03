@@ -33,7 +33,7 @@ export default {
     };
   },
   computed: {
-    ...mapState("modal", ["pageHasModalOpen"]),
+    ...mapState("global", ["pageHasModalOpen"]),
   },
   methods: {
     async closeModal() {

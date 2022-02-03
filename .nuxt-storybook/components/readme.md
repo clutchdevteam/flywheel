@@ -6,6 +6,7 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
+- `<SiteHeader>` | `<site-header>` (components/global/SiteHeader.vue)
 - `<Page>` | `<page>` (components/Page.vue)
 - `<BaseButton>` | `<base-button>` (components/base/BaseButton.vue)
 - `<BaseHeading>` | `<base-heading>` (components/base/BaseHeading.vue)

@@ -17,14 +17,14 @@ let store = {};
   // Enforce store modules
   store.modules = store.modules || {}
 
-  resolveStoreModules(require('../store/modal.js'), 'modal.js')
+  resolveStoreModules(require('../store/global.js'), 'global.js')
 
   // If the environment supports hot reloading...
 
   if (process.client && module.hot) {
     // Whenever any Vuex module is updated...
     module.hot.accept([
-      '../store/modal.js',
+      '../store/global.js',
     ], () => {
       // Update `root.modules` with the latest definitions.
       updateModules()

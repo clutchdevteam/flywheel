@@ -1,7 +1,6 @@
 <template>
   <div :id="`${menuId}-wrapper`" @keydown.stop="handleKeyPress">
     <button
-      class="px-4 py-1 bg-green-500 rounded text-white hover:bg-green-600"
       @click.prevent="toggleMenu(menu)"
       :id="menuId"
       aria-haspopup="true"
@@ -78,7 +77,6 @@ export default {
       // Convert nodelist of elements into an array
       const focusableElementsArr = Array.from(focusableElements);
 
-      console.log(focusableElementsArr);
       // Grab current active element
       const activeEl = document.activeElement;
       // Find current active element within the array of focusable elements

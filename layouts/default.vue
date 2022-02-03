@@ -1,14 +1,15 @@
 <template>
   <div class="site-wrapper">
-    <header>Header</header>
+    <header :inert="hasOpenMenu">Header</header>
 
-    <main>
+    <main :inert="hasOpenMenu">
       <Nuxt />
     </main>
 
-    <footer>Footer</footer>
+    <footer :inert="hasOpenMenu">Footer</footer>
 
     <PortalTarget name="modal"></PortalTarget>
+    <PortalTarget name="mobile-menu" transition="slide"></PortalTarget>
   </div>
 </template>
 
@@ -17,7 +18,10 @@ import { mapState } from "vuex";
 
 export default {
   computed: {
-    ...mapState("modal", ["pageHasModalOpen"]),
+    ...mapState("global", ["pageHasModalOpen", "isMobileMenuOpen"]),
+    hasOpenMenu() {
+      return this.pageHasModalOpen || this.isMobileMenuOpen;
+    },
   },
 };
 </script>

@@ -5,9 +5,10 @@
     </template>
 
     <nuxt-link
+      class="block"
       v-else
       :id="menu.title.toLowerCase().replace(' ', '-')"
-      :to="menu.link"
+      :to="menu.slug"
     >
       {{ menu.title }}
     </nuxt-link>

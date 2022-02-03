@@ -1,4 +1,7 @@
 {
+  "SiteHeader": {
+    "description": "Auto imported from components/global/SiteHeader.vue"
+  },
   "Page": {
     "description": "Auto imported from components/Page.vue"
   },
