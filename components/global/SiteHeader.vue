@@ -2,7 +2,7 @@
   <header class="container mx-auto flex justify-between">
     <div class="w-28">
       <BaseLink href="/" :inert="isMobileMenuOpen">
-        <img v-if="logo.filename" :src="logo.filename" :alt="logo.alt" />
+        <img v-if="logo" :src="logo.filename" :alt="logo.alt" />
       </BaseLink>
     </div>
 
@@ -93,11 +93,7 @@
 
                   <div class="px-3 py-6">
                     <BaseLink href="/">
-                      <img
-                        v-if="logo.filename"
-                        :src="logo.filename"
-                        :alt="logo.alt"
-                      />
+                      <img v-if="logo" :src="logo.filename" :alt="logo.alt" />
                     </BaseLink>
                   </div>
                 </div>
@@ -139,12 +135,14 @@ export default {
       );
       await this.$nextTick();
       await this.$nextTick();
+
       this.$refs.closeButtonRef?.focus();
     },
     async closeMenu() {
       await this.$store.commit("global/isMobileMenuOpen", false);
       await this.$nextTick();
       await this.$nextTick();
+
       this.$refs.openButtonRef?.focus();
     },
   },
