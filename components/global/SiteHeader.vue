@@ -2,7 +2,7 @@
   <header class="container mx-auto flex justify-between">
     <div class="w-28">
       <BaseLink href="/" :inert="isMobileMenuOpen">
-        <img v-if="logo" :src="logo.filename" :alt="logo.alt" />
+        <BaseImage v-if="logo" :src="logo.filename" :alt="logo.alt" />
       </BaseLink>
     </div>
 
@@ -93,7 +93,11 @@
 
                   <div class="px-3 py-6">
                     <BaseLink href="/">
-                      <img v-if="logo" :src="logo.filename" :alt="logo.alt" />
+                      <BaseImage
+                        v-if="logo"
+                        :src="logo.filename"
+                        :alt="logo.alt"
+                      />
                     </BaseLink>
                   </div>
                 </div>

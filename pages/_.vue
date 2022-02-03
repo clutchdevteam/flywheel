@@ -39,7 +39,7 @@ export default {
       });
 
       // Use the bridge to listen the events
-      storyblokInstance.on(["published", "change"], (event) => {
+      storyblokInstance.on(["input", "published", "change"], (event) => {
         // window.location.reload()
         this.$nuxt.$router.go({
           path: this.$nuxt.$router.currentRoute,
@@ -49,17 +49,14 @@ export default {
     });
   },
   async fetch() {
-    // Check if the nav has already been loaded. If not, send req to storyblok and set it in vuex store
-    if (!this.loaded) {
-      const globalRes = await this.$storyapi.get("cdn/stories/global", {
-        version: this.version,
-      });
+    const globalRes = await this.$storyapi.get("cdn/stories/global", {
+      version: this.version,
+    });
 
-      // set global content in vuex
-      this.$store.commit("global/setGlobals", globalRes.data.story.content);
-      // set loaded to true to negate uneccesary additional calls to storyblok
-      this.$store.commit("global/isLoaded", true);
-    }
+    // set global content in vuex
+    this.$store.commit("global/setGlobals", globalRes.data.story.content);
+    // set loaded to true to negate uneccesary additional calls to storyblok
+    this.$store.commit("global/isLoaded", true);
 
     const fullSlug = this.$route.path === "/" ? "home" : this.$route.path;
 

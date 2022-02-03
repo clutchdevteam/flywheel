@@ -6,14 +6,14 @@ export const Default = (args) => ({
   props: Object.keys(args),
   template: `
   <div :class="width">
-    <BaseImage :src="src" :alt-text="altText" />
+    <BaseImage :src="src" :alt-text="alt" />
   </div>
   `,
 });
 
 Default.argTypes = {
   src: "text",
-  altText: "text",
+  alt: "text",
   width: {
     control: {
       type: "select",
@@ -24,6 +24,6 @@ Default.argTypes = {
 
 Default.args = {
   src: "https://source.unsplash.com/random",
-  altText: "Image alt text",
+  alt: "Image alt text",
   width: "w-1/2",
 };

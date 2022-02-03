@@ -1,5 +1,5 @@
 <template>
-  <img class="w-full h-auto" :src="src" :alt="altText" />
+  <img class="w-full h-auto" :src="src" :alt="alt" />
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default {
     /**
      * Required alt text for the image
      */
-    altText: {
+    alt: {
       type: String,
       required: true,
     },

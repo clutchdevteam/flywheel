@@ -22,9 +22,16 @@ Default.argTypes = {
   nav: {
     type: "array",
   },
+  logo: {
+    type: "object",
+  },
 };
 
 Default.args = {
+  logo: {
+    alt: "Clutch Creative Logo",
+    fieldname: "https://a.storyblok.com/f/144859/x/9da6cc40f9/logo.svg",
+  },
   nav: [
     {
       id: 0,

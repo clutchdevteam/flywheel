@@ -1,4 +1,7 @@
 {
+  "SiteFooter": {
+    "description": "Auto imported from components/global/SiteFooter.vue"
+  },
   "SiteHeader": {
     "description": "Auto imported from components/global/SiteHeader.vue"
   },

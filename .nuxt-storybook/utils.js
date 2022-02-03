@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"STORYBLOK_API_KEY":"BRrzVpOdCCh9xEXCKUZpAgtt"}
+      env: {"STORYBLOK_API_KEY":"BRrzVpOdCCh9xEXCKUZpAgtt","NODE_ENV":"development"}
     }
     // Only set once
 

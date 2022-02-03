@@ -6,7 +6,7 @@
       <Nuxt />
     </main>
 
-    <footer :inert="hasOpenMenu">Footer</footer>
+    <SiteFooter :footer-content="footer" :inert="hasOpenMenu" />
 
     <PortalTarget name="modal"></PortalTarget>
     <PortalTarget name="mobile-menu"></PortalTarget>
@@ -23,6 +23,7 @@ export default {
       "isMobileMenuOpen",
       "mainNav",
       "logo",
+      "footer",
     ]),
     hasOpenMenu() {
       return this.pageHasModalOpen || this.isMobileMenuOpen;

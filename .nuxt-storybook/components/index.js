@@ -1,3 +1,4 @@
+export { default as SiteFooter } from '../../components/global/SiteFooter.vue'
 export { default as SiteHeader } from '../../components/global/SiteHeader.vue'
 export { default as Page } from '../../components/Page.vue'
 export { default as BaseButton } from '../../components/base/BaseButton.vue'
