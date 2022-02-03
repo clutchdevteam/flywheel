@@ -1,8 +1,11 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
+  dev: process.env.NODE_ENV !== "production",
+
   env: {
     STORYBLOK_API_KEY: process.env.STORYBLOK_API_KEY,
+    NODE_ENV: process.env.NODE_ENV,
   },
 
   storybook: {

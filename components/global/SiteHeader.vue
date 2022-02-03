@@ -1,7 +1,9 @@
 <template>
   <header class="container mx-auto flex justify-between">
-    <div>
-      <BaseLink href="/" :inert="isMobileMenuOpen"> Logo </BaseLink>
+    <div class="w-28">
+      <BaseLink href="/" :inert="isMobileMenuOpen">
+        <img v-if="logo.filename" :src="logo.filename" :alt="logo.alt" />
+      </BaseLink>
     </div>
 
     <nav>
@@ -90,7 +92,13 @@
                   </nav>
 
                   <div class="px-3 py-6">
-                    <BaseLink href="/"> Logo </BaseLink>
+                    <BaseLink href="/">
+                      <img
+                        v-if="logo.filename"
+                        :src="logo.filename"
+                        :alt="logo.alt"
+                      />
+                    </BaseLink>
                   </div>
                 </div>
               </div>
@@ -113,6 +121,10 @@ export default {
   props: {
     nav: {
       type: Array,
+      required: true,
+    },
+    logo: {
+      type: Object,
       required: true,
     },
   },

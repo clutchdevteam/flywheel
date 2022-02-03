@@ -8,7 +8,7 @@
       class="block"
       v-else
       :id="menu.title.toLowerCase().replace(' ', '-')"
-      :to="menu.slug"
+      :to="menu.slug.cached_url"
     >
       {{ menu.title }}
     </nuxt-link>
