@@ -6,7 +6,7 @@ export const state = () => ({
   logo: null,
   footer: {
     footerNav: [],
-    logo: {},
+    logo: null,
   },
 });
 
