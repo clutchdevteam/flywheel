@@ -1,6 +1,7 @@
 export { default as SiteFooter } from '../../components/global/SiteFooter.vue'
 export { default as SiteHeader } from '../../components/global/SiteHeader.vue'
 export { default as Page } from '../../components/Page.vue'
+export { default as BlocksTest } from '../../components/blocks/Test.vue'
 export { default as BaseButton } from '../../components/base/BaseButton.vue'
 export { default as BaseHeading } from '../../components/base/BaseHeading.vue'
 export { default as BaseImage } from '../../components/base/BaseImage.vue'
@@ -13,7 +14,6 @@ export { default as BaseRadio } from '../../components/base/BaseRadio.vue'
 export { default as BaseRadioGroup } from '../../components/base/BaseRadioGroup.vue'
 export { default as BaseSelect } from '../../components/base/BaseSelect.vue'
 export { default as BaseTextarea } from '../../components/base/BaseTextarea.vue'
-export { default as BlocksTest } from '../../components/blocks/Test.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

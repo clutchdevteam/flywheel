@@ -9,6 +9,7 @@ You can directly use them in pages and other components without the need to impo
 - `<SiteFooter>` | `<site-footer>` (components/global/SiteFooter.vue)
 - `<SiteHeader>` | `<site-header>` (components/global/SiteHeader.vue)
 - `<Page>` | `<page>` (components/Page.vue)
+- `<BlocksTest>` | `<blocks-test>` (components/blocks/Test.vue)
 - `<BaseButton>` | `<base-button>` (components/base/BaseButton.vue)
 - `<BaseHeading>` | `<base-heading>` (components/base/BaseHeading.vue)
 - `<BaseImage>` | `<base-image>` (components/base/BaseImage.vue)
@@ -21,4 +22,3 @@ You can directly use them in pages and other components without the need to impo
 - `<BaseRadioGroup>` | `<base-radio-group>` (components/base/BaseRadioGroup.vue)
 - `<BaseSelect>` | `<base-select>` (components/base/BaseSelect.vue)
 - `<BaseTextarea>` | `<base-textarea>` (components/base/BaseTextarea.vue)
-- `<BlocksTest>` | `<blocks-test>` (components/blocks/Test.vue)
