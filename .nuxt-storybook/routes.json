@@ -1,5 +1,12 @@
 [
   {
+    "name": "contact-us",
+    "path": "/contact-us",
+    "component": "/Users/drewclements/Desktop/clutch/flywheel/pages/contact-us.vue",
+    "chunkName": "pages/contact-us",
+    "_name": "_10cc03bc"
+  },
+  {
     "name": "all",
     "path": "/*",
     "component": "/Users/drewclements/Desktop/clutch/flywheel/pages/_.vue",

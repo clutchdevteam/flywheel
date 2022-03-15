@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply overflow-x-hidden;
+}
+
+*:focus-visible {
+  outline-color: #6fcfc9;
+  outline-style: auto;
+  outline-offset: 3px;
+  outline-width: 2px;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+*:hover {
+  @apply transition duration-150 ease-in-out;
+}

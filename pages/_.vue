@@ -28,35 +28,38 @@ export default {
     },
   },
   mounted() {
-    this.$storybridge(() => {
-      const storyblokInstance = new StoryblokBridge();
-
-      // Use the input event for instant update of content
-      storyblokInstance.on("input", (event) => {
-        if (event.story.id === this.story.id) {
-          this.story.content = event.story.content;
-        }
-      });
-
-      // Use the bridge to listen the events
-      storyblokInstance.on(["input", "published", "change"], (event) => {
-        // window.location.reload()
-        this.$nuxt.$router.go({
-          path: this.$nuxt.$router.currentRoute,
-          force: true,
+    this.$storybridge(
+      () => {
+        // eslint-disable-next-line no-undef
+        const storyblokInstance = new StoryblokBridge();
+        storyblokInstance.on("enterEditmode", (event) => {
+          this.isProdSite && this.$fetch();
+          this.getStory(event.storyId);
         });
-      });
-    });
+        storyblokInstance.on(["input", "published", "change"], (event) =>
+          this.handleEvent(event)
+        );
+      },
+      (error) => {
+        if (this.$nuxt.context.isDev && this.$route.query._storyblok) {
+          this.logError(error);
+        }
+      }
+    );
   },
   async fetch() {
-    const globalRes = await this.$storyapi.get("cdn/stories/global", {
-      version: this.version,
-    });
+    if (!this.loaded) {
+      const globalRes = await this.$storyapi.get("cdn/stories/global", {
+        version: this.version,
+      });
 
-    // set global content in vuex
-    this.$store.commit("global/setGlobals", globalRes.data.story.content);
-    // set loaded to true to negate uneccesary additional calls to storyblok
-    this.$store.commit("global/isLoaded", true);
+      // set global content in vuex
+      this.$store.commit("global/setGlobals", globalRes.data.story.content);
+
+      console.log(globalRes.data.story.content);
+      // set loaded to true to negate uneccesary additional calls to storyblok
+      this.$store.commit("global/isLoaded", true);
+    }
 
     const fullSlug = this.$route.path === "/" ? "home" : this.$route.path;
 
@@ -79,6 +82,32 @@ export default {
         });
       }
     }
+  },
+  methods: {
+    getStory(storyId, version = "draft") {
+      return this.$storyapi
+        .get(`cdn/stories/${storyId}`, {
+          version: version,
+        })
+        .then(({ data }) => {
+          this.story.content = data.story && data.story.content;
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    },
+    handleEvent(event) {
+      if (event.action === "input") {
+        if (event.story.id === this.story.id) {
+          this.story.content = event.story.content;
+        }
+      } else {
+        this.$nuxt.$router.go({
+          path: this.$nuxt.$router.currentRoute,
+          force: true,
+        });
+      }
+    },
   },
 };
 </script>

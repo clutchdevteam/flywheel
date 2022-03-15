@@ -14,11 +14,15 @@ import { createStore } from './store.js'
 /* Plugins */
 
 import nuxt_plugin_plugin_d9c03634 from 'nuxt_plugin_plugin_d9c03634' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_plugin_ed3acd64 from 'nuxt_plugin_plugin_ed3acd64' // Source: ./composition-api/plugin.mjs (mode: 'all')
 import nuxt_plugin_portalvue_6a351e52 from 'nuxt_plugin_portalvue_6a351e52' // Source: ./portal-vue.js (mode: 'all')
 import nuxt_plugin_templatesplugin305eeb81_b574ecae from 'nuxt_plugin_templatesplugin305eeb81_b574ecae' // Source: ./templates.plugin.305eeb81.js (mode: 'all')
 import nuxt_plugin_axios_0275b8fc from 'nuxt_plugin_axios_0275b8fc' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_components_6fb0430c from 'nuxt_plugin_components_6fb0430c' // Source: ../plugins/components (mode: 'all')
 import nuxt_plugin_wicginertclient_6aa59642 from 'nuxt_plugin_wicginertclient_6aa59642' // Source: ../plugins/wicg-inert.client.js (mode: 'client')
+import nuxt_plugin_richtextrenderer_98325662 from 'nuxt_plugin_richtextrenderer_98325662' // Source: ../plugins/rich-text-renderer.js (mode: 'all')
+import nuxt_plugin_formRoute_1f3e0330 from 'nuxt_plugin_formRoute_1f3e0330' // Source: ../plugins/formRoute.js (mode: 'all')
+import nuxt_plugin_meta_abc72040 from 'nuxt_plugin_meta_abc72040' // Source: ./composition-api/meta.mjs (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -216,6 +220,10 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_d9c03634(app.context, inject)
   }
 
+  if (typeof nuxt_plugin_plugin_ed3acd64 === 'function') {
+    await nuxt_plugin_plugin_ed3acd64(app.context, inject)
+  }
+
   if (typeof nuxt_plugin_portalvue_6a351e52 === 'function') {
     await nuxt_plugin_portalvue_6a351e52(app.context, inject)
   }
@@ -234,6 +242,18 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_wicginertclient_6aa59642 === 'function') {
     await nuxt_plugin_wicginertclient_6aa59642(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_richtextrenderer_98325662 === 'function') {
+    await nuxt_plugin_richtextrenderer_98325662(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_formRoute_1f3e0330 === 'function') {
+    await nuxt_plugin_formRoute_1f3e0330(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_meta_abc72040 === 'function') {
+    await nuxt_plugin_meta_abc72040(app.context, inject)
   }
 
   // Lock enablePreview in context

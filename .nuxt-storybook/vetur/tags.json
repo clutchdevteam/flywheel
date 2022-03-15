@@ -14,8 +14,17 @@
   "BaseButton": {
     "description": "Auto imported from components/base/BaseButton.vue"
   },
+  "BaseCarousel": {
+    "description": "Auto imported from components/base/BaseCarousel.vue"
+  },
+  "BaseCarouselSlide": {
+    "description": "Auto imported from components/base/BaseCarouselSlide.vue"
+  },
   "BaseHeading": {
     "description": "Auto imported from components/base/BaseHeading.vue"
+  },
+  "BaseIcon": {
+    "description": "Auto imported from components/base/BaseIcon.vue"
   },
   "BaseImage": {
     "description": "Auto imported from components/base/BaseImage.vue"
@@ -44,7 +53,19 @@
   "BaseSelect": {
     "description": "Auto imported from components/base/BaseSelect.vue"
   },
+  "BaseText": {
+    "description": "Auto imported from components/base/BaseText.vue"
+  },
   "BaseTextarea": {
     "description": "Auto imported from components/base/BaseTextarea.vue"
+  },
+  "BaseRichText": {
+    "description": "Auto imported from components/base/BaseRichText/BaseRichText.vue"
+  },
+  "BaseBaseRichTextHeading": {
+    "description": "Auto imported from components/base/BaseRichText/Heading.vue"
+  },
+  "BaseBaseRichTextParagraph": {
+    "description": "Auto imported from components/base/BaseRichText/Paragraph.vue"
   }
 }
